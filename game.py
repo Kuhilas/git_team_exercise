@@ -1,3 +1,4 @@
+
 def main ():
     while True:
         print("Welcome to quiz appliaction!")
@@ -17,41 +18,28 @@ def main ():
         else: 
             pass
 
-        
-
-
-
-
-
-
-
-
+def quiz_1():
+    score = 0
+    print("Welcome to the quiz! Please give the answer in format yyyy, E.g: 1600")
+    answers = [1300,1800,1800]
+    q1 = "In which century did the Hundred Years' War between England and France begin?"
+    q2 = "In which century did the American Civil War take place?"
+    q3 = "In which century did the Napoleonic Wars occur?"
+    questions = [q1,q2,q3]
+    index = 0
+    for question in questions:
+        print(question)
+        try:
+            answer = int(input("Answer: "))
+            if answer == answers[index]:
+                print("Correct!")
+                score += 1
+            else:
+                print("Incorrect!")
+            index += 1
+        except ValueError:
+            print("Wrong format!")
+    return score
+  
 if __name__ == "__main__":
     main()
-
-
-# While true loopissa
-    # Alku (haluatko pelata)
-
-
-    1.
-        # näytä kysymys (print)
-        # promptaa vastaus
-        # score counter +=
-
-    2.
-        # näytä kysymys (print)
-        # promptaa vastaus 
-        # score counter +=
-
-    3.
-        # näytä kysymys (print)
-        # promptaa vastaus
-        # score counter +=
-    
-    # return score
-    
-
-    # End
-    # Print score to player
-    # Play again
