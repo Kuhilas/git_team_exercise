@@ -5,7 +5,7 @@ def main ():
         if choice in ("y", "yes", "Yes", "Y"):
             score = quiz_1()
             newgame = end(score)
-            if newgame == 0
+            if newgame == 0:
                 pass
             else:
                 print("Thanks. bye!")
@@ -40,7 +40,7 @@ def quiz_1():
             print("Wrong format!")
     return score
   
-  def end(score):
+def end(score):
     print(f"Your score was: {score} points")
     play_again = input("Do you want to play again? ")
 
