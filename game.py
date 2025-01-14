@@ -1,4 +1,22 @@
-#Tuukan alku
+
+def main ():
+    while True:
+        print("Welcome to quiz appliaction!")
+        choice = input("Would you like to play? y/n ")
+        if choice in ("y", "yes", "Yes", "Y"):
+            score = quiz_1()
+            newgame = end(score)
+            if newgame == 0
+                pass
+            else:
+                print("Thanks. bye!")
+                break
+                
+        elif choice in ("n", "no", "No", "N"):
+            print("Good bye!")
+            break
+        else: 
+            pass
 
 def quiz_1():
     score = 0
@@ -22,5 +40,6 @@ def quiz_1():
         except ValueError:
             print("Wrong format!")
     return score
-
-#Lindan loppu
+  
+if __name__ == "__main__":
+    main()
